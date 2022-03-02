@@ -4,6 +4,18 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindLoopTest {
+
+    @Test
+    public void whenArrayHas1Then2() {
+        int[] data = {3, 2, 1};
+        int el = 1;
+        int start = 0;
+        int finish = 2;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = 2;
+        Assert.assertEquals(expected, result);
+    }
+
     @Test
     public void whenArrayHas5Then0() {
         int[] data = {5, 4, 1, 9};
