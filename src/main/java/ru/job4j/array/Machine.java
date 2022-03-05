@@ -10,7 +10,7 @@ public class Machine {
         int balance = money - price;
         for (int i = 0; balance != 0; i++) {
             while (balance >= coins[i]) {
-                balance = balance - coins[i];
+                balance -= coins[i];
                 rsl[size++] = coins[i];
             }
         }
