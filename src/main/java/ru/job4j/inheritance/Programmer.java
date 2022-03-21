@@ -8,4 +8,8 @@ public class Programmer extends Engineer {
         super(name, surname, education, birthday, position);
         this.language = language;
     }
+
+    public String getLanguage() {
+        return language;
+    }
 }

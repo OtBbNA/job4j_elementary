@@ -8,4 +8,8 @@ public class Dentist extends Doctor {
         super(name, surname, education, birthday, position);
         this.type = type;
     }
+
+    public String getType() {
+        return type;
+    }
 }

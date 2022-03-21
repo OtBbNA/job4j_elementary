@@ -8,5 +8,9 @@ public class Builder extends Engineer {
         super(name, surname, education, birthday, position);
         this.workTypes = workTypes;
     }
+
+    public String getWorkTypes() {
+        return workTypes;
+    }
 }
 

@@ -8,4 +8,8 @@ public class Engineer extends Profession {
         super(name, surname, education, birthday);
         this.position = position;
     }
+
+    public String getPosition() {
+        return position;
+    }
 }
