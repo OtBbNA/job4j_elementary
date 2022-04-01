@@ -4,6 +4,7 @@ public class Bus implements Transport {
 
     @Override
     public void drive() {
+        String where = "to home";
     }
 
     @Override
