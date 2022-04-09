@@ -1,13 +1,14 @@
 package ru.job4j.ex;
 
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class FactTest {
 
-    @Test (expected = IllegalStateException.class)
+    @Test (expected = IllegalArgumentException.class)
     public void calc() {
-        new Fact().calc(-6);
+        Fact result = new Fact();
+        int expected = 720;
+        Assert.assertEquals(expected, result.calc(-1));
     }
 }
