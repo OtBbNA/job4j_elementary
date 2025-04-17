@@ -8,6 +8,9 @@ public class Broken {
     private String surname;
     private String name;
 
+    public Broken() {
+    }
+
     void echo() {
 
     }
